@@ -1,0 +1,557 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* Modern Pink & Purple Palette */
+      --primary-pink: #FF6B9D;
+      --secondary-pink: #FF8FAB;
+      --accent-purple: #8B5FBF;
+      --deep-purple: #6A4C93;
+      --lavender: #A8DADC;
+      --coral: #F1FAEE;
+      --sunset-orange: #F4A261;
+      --mint-green: #2A9D8F;
+      
+      /* Neutral & Dark Colors */
+      --charcoal: #1D3557;
+      --slate-gray: #457B9D;
+      --soft-gray: #F8F9FA;
+      --cream: #FFF8F0;
+      --white: #FFFFFF;
+      
+      /* Modern Gradients */
+       --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-primary: linear-gradient(135deg, #FF6B9D 0%, #8B5FBF 100%);
+      --gradient-secondary: linear-gradient(135deg, #A8DADC 0%, #F1FAEE 100%);
+      --gradient-sunset: linear-gradient(135deg, #F4A261 0%, #FF6B9D 100%);
+      --gradient-ocean: linear-gradient(135deg, #2A9D8F 0%, #457B9D 100%);
+      --gradient-purple: linear-gradient(135deg, #8B5FBF 0%, #6A4C93 100%);
+      --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: var(--charcoal);
+      overflow-x: hidden;
+      background: var(--cream);
+    }
+
+    /* Header Styles */
+    .header {
+      background:var(--gradient-bg);
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 30px rgba(139, 95, 191, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+    }
+
+    .nav-link:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section */
+    .learn-hero {
+      padding: 120px 20px 80px; 
+      background: var(--gradient-primary);
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .learn-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    }
+
+    .learn-hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .learn-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Info Section */
+    .info-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+      background: rgba(231, 241, 241, 0.3)
+    }
+
+    .info-container {
+      max-width: 1000px;
+      background: var(--white);
+      border-radius: 24px;
+      padding: 50px;
+      box-shadow: 0 20px 60px rgba(22, 12, 32, 0.15);
+      font-family: 'Segoe UI', sans-serif;
+      color: black;
+      line-height: 1.7;
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .info-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: var(--gradient-primary);
+    }
+
+    .info-container h2 {
+      font-size: 2.5rem;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .info-container h3 {
+      font-size: 1.5rem;
+      color: var(--accent-purple);
+      margin: 2rem 0 1rem 0;
+      font-weight: 600;
+    }
+
+    .info-container p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: var(--slate-gray);
+    }
+
+    /* PCOD Introduction */
+    .pcod-intro {
+      background:  var(--white) ;
+      padding: 3rem;
+      margin:0 auto ;
+      position: relative;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(168, 218, 220, 0.3);
+      color: var(--charcoal);
+      line-height: 1.8;
+    }
+
+    .pcod-intro h2 {
+      color: var(--deep-purple);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .pcod-intro strong {
+      color: var(--primary-pink);
+      font-weight: 600;
+    }
+
+    /* PCOD vs PCOS Comparison */
+    .pcod-pcos-compare {
+      background: var(--white);
+      padding: 50px 30px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(95, 22, 46, 0.15);
+      margin: 60px auto;
+      max-width: 1100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pcod-pcos-compare::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+    }
+
+    .pcod-pcos-compare h2 {
+      background: black;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .togglle-btn {
+      background: var(--gradient-primary);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+    }
+
+    .togglle-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(255, 107, 157, 0.4);
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    .pcod-pcos-compare table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: auto;
+      display: none;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .pcod-pcos-compare table th,
+    .pcod-pcos-compare table td {
+      border: none;
+      padding: 18px 20px;
+      text-align: left;
+    }
+
+    .pcod-pcos-compare table th {
+      background: var(--gradient-primary);
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .pcod-pcos-compare table tbody tr:nth-child(even) {
+      background: var(--soft-gray);
+    }
+
+    .pcod-pcos-compare table tbody tr:hover {
+      background: rgb(241, 94, 185);
+      COLOR:WHITE;
+      transition: background 0.3s ease;
+    }
+
+    /* PCOD Tracker */
+
+
+    .pcod-tracker {
+      background: white;
+      color: rgb(6, 6, 6);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(91, 95, 94, 0.3);
+      text-align: center;
+      max-width: 1100px;
+      margin: 60px auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pcod-tracker::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+    }
+    
+    .tracker-heading {
+      display: flex;
+      color: var(--gradient-primary);
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      gap: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tracker-cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card {
+      background: var(--white);
+      color: var(--charcoal);
+      border-radius: 16px;
+      padding: 30px;
+      width: 280px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--deep-purple);
+    }
+
+    .card p {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .card p span {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Care Cards Section */
+    .care-cards-section {
+      padding: 40px 20px;
+      background: white;
+      text-align: center;
+    }
+    
+    .care-cards-section h2 {
+      color: black;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      font-weight: 700;
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 320px;
+      height: 200px;
+      perspective: 1000px;
+    }
+
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s ease;
+      transform-style: preserve-3d;
+      box-shadow: 0 15px 40px rgba(255, 107, 157, 0.3);
+      border-radius: 20px;
+    }
+
+    .flip-card:hover .flip-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-front, .flip-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .flip-front {
+      background: var(--gradient-primary);
+      color: white;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .flip-back {
+      background: var(--white);
+      color: var(--charcoal);
+      transform: rotateY(180deg);
+      box-shadow: inset 0 0 20px rgba(255, 107, 157, 0.1);
+    }
+
+    /* Footer */
+    .lfooter {
+      background: #2D3426;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .lfooter .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .lfooter p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .learn-hero h1 {
+        font-size: 2.2rem;
+      }
+      
+      .info-container {
+        padding: 30px;
+      }
+      
+      .pcod-intro {
+        padding: 2rem;
+      }
+      
+      .tracker-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .card {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .flip-card {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    /* Scroll animations */
+    .info-container,
+    .pcod-intro,
+    .pcod-pcos-compare,
+    .pcod-tracker {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .pcod-intro {
+      animation-delay: 0.2s;
+    }
+
+    .pcod-pcos-compare {
+      animation-delay: 0.4s;
+    }
+
+    .pcod-tracker {
+      animation-delay: 0.2s;
+    }

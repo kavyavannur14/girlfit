@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn More - GirlFit</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="learnmore.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-heart"></i> GirLFit
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Back to Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="learn-hero">
+    <div class="container">
+      <h1>Understand the Female Biological Cycle 🌸</h1>
+      <p>Knowledge leads to empathy, care, and confidence. Let's learn together.</p>
+    </div>
+  </section>
+
+  <!-- Biological Basics -->
+  <section class="learn-section">
+    <div class="info-section">
+      <div class="info-container">
+        <h2>What is Menstruation?</h2>
+        <p>The menstrual cycle is a complex, natural process that occurs in the female reproductive system, preparing the body for a potential pregnancy. It is regulated by a finely tuned interplay of hormones and typically spans around 28 days, though it can range from 21 to 35 days in different individuals. The cycle includes several phases: the menstrual phase, follicular phase, ovulation, and luteal phase — each playing a distinct role in reproductive health.</p>
+        
+        <h2>The Phases of the Menstrual Cycle:</h2>
+        
+        <h3>1. Menstrual Phase</h3>
+        <p>This is the first stage, marked by the shedding of the uterine lining, which exits the body through the vagina. This bleeding, commonly referred to as a "period," lasts for 3 to 7 days and involves a mix of blood, mucus, and tissue.</p>
+        
+        <h3>2. Follicular Phase</h3>
+        <p>Starting on the first day of menstruation and ending with ovulation, this phase involves the maturation of follicles in the ovaries under the influence of follicle-stimulating hormone (FSH). One dominant follicle will prepare to release an egg.</p>
+        
+        <h3>3. Ovulation</h3>
+        <p>Around mid-cycle, a surge in luteinizing hormone (LH) triggers the release of a mature egg from the ovary. This is the most fertile period of the cycle, and fertilization is most likely if sperm are present in the reproductive tract.</p>
+        
+        <h3>4. Luteal Phase</h3>
+        <p>After ovulation, the ruptured follicle becomes the corpus luteum and secretes progesterone to maintain the uterine lining. If fertilization doesn't occur, hormone levels drop, leading to the next menstrual period.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pcod-intro">
+    <h2>🌺 There's Another Side to Periods...</h2>
+    <p>Up to this point, we've explored how periods are a natural and essential part of growing up. But sometimes, things don't go as expected. There's another side — where periods become irregular, painful, or stop showing up entirely. This could be a sign of a common but often misunderstood conditions known as <strong>PCOD</strong> (Polycystic Ovarian Disorder) or <strong>PCOS</strong> (Polycystic Ovarian Syndrome).</p>
+    <p>Recognizing the symptoms early can make a big difference. Let's understand PCOD, PCOS and how they can affect girls and women — physically and emotionally.</p>
+  </section>
+
+  <section class="pcod-pcos-compare">
+    <h2>🌿 PCOD vs PCOS — What's the Difference?</h2>
+    <button class="togglle-btn" onclick="toggleTable()">Show Comparison Table</button>
+    <div class="table-container">
+      <table id="comparisonTable">
+        <thead>
+          <tr>
+            <th>Aspect</th>
+            <th>PCOD</th>
+            <th>PCOS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Description</td>
+            <td>Ovaries release immature eggs → form cysts; mild hormonal imbalance.</td>
+            <td>Complex endocrine & metabolic disorder; stronger hormone imbalance & cysts.</td>
+          </tr>
+          <tr>
+            <td>Prevalence</td>
+            <td>About 10% of women.</td>
+            <td>0.2–2.5% globally; 3.7–22.5% among Indian women.</td>
+          </tr>
+          <tr>
+            <td>Hormonal Imbalance</td>
+            <td>Mild; mainly estrogen & progesterone.</td>
+            <td>Severe; elevated androgens & insulin resistance.</td>
+          </tr>
+          <tr>
+            <td>Menstrual Cycle</td>
+            <td>May be irregular or slightly delayed.</td>
+            <td>Highly irregular or absent (amenorrhea).</td>
+          </tr>
+          <tr>
+            <td>Fertility</td>
+            <td>Generally preserved; mild help may suffice.</td>
+            <td>Often affected; risk of miscarriage, may need fertility treatment.</td>
+          </tr>
+          <tr>
+            <td>Metabolic Impact</td>
+            <td>Minor metabolic effects.</td>
+            <td>Strong link to insulin resistance, diabetes, heart disease.</td>
+          </tr>
+          <tr>
+            <td>Severity & Risks</td>
+            <td>Milder; mostly managed with lifestyle changes.</td>
+            <td>Serious; can lead to chronic issues like diabetes, hypertension, and endometrial cancer.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- PCOD Tracker Section -->
+  <section class="pcod-tracker fade-in" id="pcodSection">
+    <div class="tracker-heading">
+      <span style="font-size: 32px;">🔔</span> 
+      PCOD LIVE CASE TRACKER (India Estimates)
+    </div>
+
+   <div class="tracker-cards">
+  <div class="card">
+    <h3>Estimated Affected Women</h3>
+    <p><span class="count" data-target="15000000">0</span>+</p>
+  </div>
+  <div class="card">
+    <h3>Adolescents (15–18 yrs)</h3>
+    <p><span class="count" data-target="9.13">0</span>%</p>
+  </div>
+  <div class="card">
+    <h3>Rotterdam Criteria Cases</h3>
+    <p><span class="count" data-target="19.6">0</span>%</p>
+  </div>
+</div>
+
+  </section>
+
+  <section class="care-cards-section">
+    <h2 >💖 Period Care Tips & Check-in Questions</h2>
+    <div class="card-grid">
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            How can I support her emotionally?
+          </div>
+          <div class="flip-back">
+            Listen without judgment, offer kindness, and remind her that it's okay to rest and feel moody.
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            What comfort items help during cramps?
+          </div>
+          <div class="flip-back">
+            A heating pad, cozy blanket, hot water, or chocolate can be comforting during painful days.
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            How do I check if she's feeling healthy?
+          </div>
+          <div class="flip-back">
+            Ask gently: "How many days is your period?", "Any dizziness or fatigue?", "Was your cycle on time?"
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">🌿 What kind of food helps during periods?</div>
+          <div class="flip-back">Offer iron-rich foods like spinach, bananas, dark chocolate, or warm soups. Avoid junk or overly salty food.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">🩸 What should I ask to check her period flow?</div>
+          <div class="flip-back">Gently ask: "Is your flow too heavy or too light?" Irregular flow can indicate hormonal imbalance or stress.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">🛌 Should I let her rest more?</div>
+          <div class="flip-back">Yes! Fatigue is common. Encourage naps and light activities like reading or drawing to feel cozy.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">🧘‍♀️ Should she exercise during her period?</div>
+          <div class="flip-back">Light stretches, walking, or gentle yoga can ease cramps and improve mood. No pressure if she's tired though.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">💧 Is water really important?</div>
+          <div class="flip-back">Absolutely! Drinking enough water reduces bloating, fatigue, and helps ease muscle cramps during periods.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">📅 Should she track her periods?</div>
+          <div class="flip-back">Yes. Help her track period dates, mood, pain level, and flow. It builds awareness and can detect health issues early.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">🩺 When should I suggest seeing a doctor?</div>
+          <div class="flip-back">
+            If she has intense pain, bleeding for more than 7 days, missed periods for months, or extreme mood swings — gently encourage her to consult a doctor.
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">❤️ How can I make her feel loved during this time?</div>
+          <div class="flip-back">
+            Sometimes, just sitting beside her, offering a kind smile, or sending a sweet message can mean the world. Presence matters more than advice.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="lfooter">
+    <div class="container">
+      <p>&copy; 2025 GirlFit | Built by Kavya</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

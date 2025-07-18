@@ -44,3 +44,7 @@ Young girls getting their periods for the first time
 Teenagers or women experiencing menstrual irregularities
 
 Anyone seeking education about menstrual health without discomfort
+
+I am on the process of improving its features.
+
+if you just want to try it out, Here is the link:  https://grand-custard-0bff36.netlify.app/learn-more
